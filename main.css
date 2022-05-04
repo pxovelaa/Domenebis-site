@@ -500,6 +500,10 @@ body {
         width: 95%;
         margin: 0 auto;
     }
+
+    .imgText {
+        background-size: cover;
+    }
 }
 
 @media (max-width : 1260px) {
