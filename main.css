@@ -92,17 +92,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 20px 0;
     background-color: #fff;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    height: 50px;
 }
 
 #navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 350px;
+    width: auto;
+    height: 50px;
 }
 
 .flag {
@@ -110,18 +110,62 @@ body {
     height: 13px;
 }
 
+.cart {
+    position: relative;
+}
+
+
+
 .cart-number {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 40px;
     align-items: center;
 }
 
+.cart span {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 6px;
+    height: 13px;
+    padding: 3px 7px;
+    color: #fff;
+    background-color: #FF4D4D;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    font-size: 11px;
+}
+
+.cart a i {
+    padding-left: 5px;
+}
+
 #navbar li {
-    padding: 13px 16px;
+    display: flex;
+    max-width: 50px;
+    padding: 12px;
     border: 1px solid #F1F1F5;
-    border-radius: 15px;
+    border-radius: 12px;
     background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+#navbar li:nth-child(3){
+    max-width: 160px;
+}
+
+#navbar li:nth-child(3) a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    padding-left: 10px;
+    padding-right: 15px;
 }
 
 
@@ -205,7 +249,7 @@ body {
 #sortFlex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;padding-left: 100px;
 }
 
 #sortFlex li {
@@ -235,7 +279,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 25px;
-
+    flex-wrap: wrap;
 }
 
 .sort2-first {
@@ -247,6 +291,7 @@ body {
 #sort2-second {
     width: 60%;
     background-color: #fff;
+    padding: 30px 40px;
 }
 
 .search-item {
@@ -264,6 +309,7 @@ body {
 
 .sort2-first form {
     width: 100%;
+    padding: 30px 35px;
 }
 
 
@@ -273,7 +319,7 @@ body {
     margin-top: 35px;
     font-size: 16px;
     box-sizing: border-box;
-    width: 100%;
+    width: 86%;
 }
 
 .range h3 {
@@ -440,6 +486,21 @@ body {
     margin: 0 auto;
     align-items: center;
 }
+@media (max-width: 1550px){
+    .sort {
+        display: none;
+    }
+    #mobile-sort {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
 
 @media (max-width : 1260px) {
     #header:nth-child(2) {
@@ -502,8 +563,59 @@ body {
         left: 10px;
         top: 10px;
     }
+    #mobile-sort {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
 
+    .mobile-sort1,
+    .mobile-sort2 {
+        width: 40%;
+        height: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: #696974;
+    }
+
+    .mobile-sort1 a,
+    .mobile-sort2 a {
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #E5E5ED;
+        border-radius: 10px;
+        padding: 13px;
+        padding-right: 50px;
+        cursor: pointer;
+    }
+
+    .sort2-first {
+        display: none;
+    }
+
+    #sort2-second,
+    .sort2-first {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .card {
+        font-size: 16px;
+    }
+
+    .domain-left,
+    .domain-right{
+        padding: 0;
+    }
+
+    .domain-right {
+        width: 100px;
+    }
 }
+
+
 
 @media (max-width: 800px) {
 
